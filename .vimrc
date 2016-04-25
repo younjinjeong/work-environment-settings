@@ -50,7 +50,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'itchyny/lightline.vim'
 
 Plugin 'airblade/vim-gitgutter'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'sjl/gundo.vim.git'
 Plugin 'scrooloose/nerdtree'
@@ -60,7 +60,8 @@ Plugin 'Shougo/vimfiler.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'edkolev/tmuxline.vim'
-
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 set guifont=Source\ Code\ for\ Powerline:h12
 let g:Powerline_symbols = 'fancy'
@@ -78,6 +79,7 @@ set number
 "Tmux airline
 let g:tmuxline_powerline_separators = 0
 
+let g:airline_powerline_fonts = 1 
 "let g:airline_theme='wombat'
 
 let g:lightline = {
@@ -227,6 +229,19 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"NERDTree Git
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ "Unknown"   : "?"
+    \ }
 
 "Syntastic 
 set statusline+=%#warningmsg#
