@@ -27,3 +27,8 @@
 - [vimfiler.vim](https://github.com/Shougo/vimfiler.vim)
 - [vimshell.vim](https://github.com/Shougo/vimshell.vim)
 - [NERDtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) 
+
+
+## fonts 
+- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)
+- [Monaco Plus Nerd File Tyeps](https://github.com/nicholasc/vim-monaco-webdevicons)
