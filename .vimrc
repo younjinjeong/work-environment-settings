@@ -121,3 +121,27 @@ let g:go_term_mode = "split"
 let g:go_term_enabled = 1
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+"GitGutter 
+"let g:gitgutter_sign_added = 'xx'
+"let g:gitgutter_sign_modified = 'yy'
+"let g:gitgutter_sign_removed = 'zz'
+"let g:gitgutter_sign_removed_first_line = '^^'
+"let g:gitgutter_sign_modified_removed = 'ww'
+
+let g:gitgutter_diff_args = '-w'
+let g:gitgutter_grep_command = 'grep --color=never -e'
+let g:gitgutter_enabled = 1
+let g:gitgutter_highlight_lines = 0
+
+function! GlobalChangedLines(ex_cmd)
+  for hunk in GitGutterGetHunks()
+    for lnum in range(hunk[2], hunk[2]+hunk[3]-1)
+       let cursor = getcurpos()
+       silent! execute lnum.a:ex_cmd
+       call setpos('.', cursor)
+    endfor
+  endfor
+endfunction
+
+command -nargs=1 Glines call GlobalChangedLines(<q-args>)
