@@ -17,7 +17,6 @@
 ## Integrations
 
 - [lightline](https://github.com/itchyny/lightline.vim)
-
 - [CtrlP](https://github.com/kien/ctrlp.vim)
 - [Tagbar](https://github.com/majutsushi/tagbar)
 - [Gundo](http://github.com/sjl/gundo.vim)
@@ -26,3 +25,5 @@
 - [unite.vim](https://github.com/Shougo/unite.vim)
 - [vimfiler.vim](https://github.com/Shougo/vimfiler.vim)
 - [vimshell.vim](https://github.com/Shougo/vimshell.vim)
+- [NERDtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
+

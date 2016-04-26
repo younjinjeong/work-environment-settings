@@ -63,7 +63,8 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
-set guifont=Source\ Code\ for\ Powerline:h12
+"set guifont=Source\ Code\ for\ Powerline:h12
+set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
 let g:Powerline_symbols = 'fancy'
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
@@ -80,7 +81,7 @@ set number
 let g:tmuxline_powerline_separators = 0
 
 let g:airline_powerline_fonts = 1 
-"let g:airline_theme='wombat'
+let g:airline_theme='wombat'
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
