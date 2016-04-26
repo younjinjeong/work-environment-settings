@@ -59,11 +59,9 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/vimshell.vim'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
-"set guifont=Source\ Code\ for\ Powerline:h12
 set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
 let g:Powerline_symbols = 'fancy'
 set t_Co=256
@@ -76,9 +74,6 @@ scriptencoding utf-8
 
 "Defaults
 set number
-
-"Tmux airline
-let g:tmuxline_powerline_separators = 0
 
 let g:airline_powerline_fonts = 1 
 let g:airline_theme='wombat'

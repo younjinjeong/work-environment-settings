@@ -12,6 +12,7 @@
 1. copy .vimrc to ~
 1. vim +PluginInstall +qall # Install VIM plugins
 1. Change iTerm2 / Terminal fonts   
+1. Install [tmux-powerline](https://github.com/erikw/tmux-powerline)
 
 
 ## Integrations
@@ -25,5 +26,4 @@
 - [unite.vim](https://github.com/Shougo/unite.vim)
 - [vimfiler.vim](https://github.com/Shougo/vimfiler.vim)
 - [vimshell.vim](https://github.com/Shougo/vimshell.vim)
-- [NERDtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
-
+- [NERDtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin) 
